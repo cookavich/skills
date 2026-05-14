@@ -6,6 +6,7 @@ Collection of agent skills for Claude Code, Codex, etc. See [AGENTS.md](AGENTS.m
 
 | Skill | Description |
 |-------|-------------|
+| [codebase-wiki](codebase-wiki/) | Progressive local codebase documentation — map first, deepen on demand |
 | [oracle](oracle/) | Second-opinion analysis via GPT-5.3-codex — planning, debugging, code review |
 
 ## Installation
@@ -26,7 +27,8 @@ Clone the repo, then symlink individual skills into your Claude Code personal sk
 
 ```bash
 git clone https://github.com/cookavich/skills.git && cd skills
+ln -s "$(pwd)/codebase-wiki" ~/.claude/skills/codebase-wiki
 ln -s "$(pwd)/oracle" ~/.claude/skills/oracle
 ```
 
-Claude Code automatically discovers skills in `~/.claude/skills/`. Once linked, the skill is available as a slash command (e.g. `/oracle`) in every session across all projects. Changes to the source are picked up immediately.
+Claude Code automatically discovers skills in `~/.claude/skills/`. Once linked, the skill is available in every session across all projects. Changes to the source are picked up immediately.

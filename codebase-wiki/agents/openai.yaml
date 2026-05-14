@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Wiki"
+  short_description: "Generate progressive local repo documentation"
+  default_prompt: "Use $codebase-wiki to map this repository. Run again with a scope (e.g. 'auth') to deepen a specific area."
